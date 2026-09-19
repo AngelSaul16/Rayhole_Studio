@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            padding-top: 56px; /* Espacio para el navbar */
+            background-color: #f4f4f4; /* Color de fondo suave */
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh; /* Altura del menú ajustada para cubrir toda la pantalla */
+            width: 220px; /* Ancho del menú */
+            background-color: #ffffff; /* Fondo blanco para el navbar */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+            z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+            overflow-y: auto; /* Añadido para permitir el desplazamiento vertical */
+        }
+        .navbar-brand {
+            padding: 20px; /* Espacio alrededor del logo */
+        }
+        .nav-link {
+            padding: 15px 20px; /* Espacio alrededor de los enlaces del menú */
+            color: #333; /* Color del texto */
+            transition: background-color 0.3s; /* Transición suave para el hover */
+        }
+        .nav-link:hover {
+            background-color: #e2e6ea; /* Color de fondo al pasar el mouse */
+            border-radius: 5px; /* Bordes redondeados al pasar el mouse */
+        }
+        .content {
+            margin-left: 270px; /* Espacio para el menú */
+            padding-bottom: 20px; /* Añadido para evitar que el contenido se corte */
+            background-color: #ffffff; /* Fondo blanco para el contenido */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+            padding: 20px; /* Espaciado interno */
+        }
+        h1, h2 {
+            color: #333; /* Color de los encabezados */
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .effective-date {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            margin-top: 30px;
+        }
+        .section-item {
+            margin-bottom: 10px;
+        }
+        .footer {
+            background-color: #000; /* Fondo negro */
+            color: #fff; /* Texto blanco */   
+            padding: 20px 0; /* Espaciado vertical */
+            border-top: 1px solid #fff; /* Línea superior blanca */
+        }
+        .social-icons ul {
+            list-style: none; /* Eliminar viñetas */
+            padding: 0; /* Eliminar padding */
+            display: flex; /* Usar flexbox para alinear los íconos */
+            justify-content: center; /* Centrar los íconos */
+        }
+        .social-icons li {
+            margin: 0 10px; /* Espacio entre los íconos */
+        }
+        .social-icons a {
+            color: #fff; /* Color de los íconos */
+            font-size: 24px; /* Tamaño de los íconos */
+        }
+        @media (max-width: 1475px) {
+            .navbar-brand {
+                padding: 0; /* Espacio alrededor del logo */
+            }
+            .content {
+                margin-left: 270px; /* Espacio para el menú */
+                padding-bottom: 20px; /* Añadido para evitar que el contenido se corte */
+                height: 92.3%; /* Hacer que el contenido ocupe todo el alto de la pantalla */
+            }
+            .content .container {
+                margin-top: 2%;
+            }
+        }
+        @media (max-width: 412px) {
+            .navbar {
+                display: none; /* Ocultar el navbar en pantallas pequeñas */
+            }
+            .content {
+                min-width: 412px;
+                margin-left: 0; /* Espacio para el menú */
+            }
+        }
+        @media (min-width: 344px) {
+           .footer {
+                min-width: 412px;
+           } 
+        }
+        @media (min-width: 540px) {
+           .footer .container {
+                max-width: 400px;
+                margin-left: 140px;
+                position: relative; left: 40px;
+           }
+           .navbar {
+                min-height: 100%;
+            }
+        }
+        @media (max-width: 431px) {
+            .navbar {
+                display: none; /* Ocultar el navbar en pantallas pequeñas */
+            }
+            .content {
+                min-width: 412px;
+                margin-left: 0; /* Espacio para el menú */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-brand">
+        <a href="https://rayholestudio.com">
+            <img src="..\assets\imgs\logo negro 1.svg" alt="Logo" style="width: 100%; height: auto;">
+        </a>
+    </div>
+    <ul class="navbar-nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link" href="#what-covers">Política de Privacidad</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#info-collection">Qué información recopilamos sobre ti</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#info-use">Cómo usamos la información que recopilamos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#info-disclosure">Cómo compartimos la información que recopilamos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#info-storage">Cómo almacenamos y aseguramos la información que recopilamos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#info-retention">Compras y Transacciones</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#info-access">Cómo acceder y controlar tu información</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacto</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#other-info">Cambios en la Política de Privacidad</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="content">
+    <div class="container">
+        <h1 id="what-covers">Política de Privacidad</h1>
+        <p class="effective-date">Efectivo a partir del: 17 de mayo de 2024</p>
+        <p>Bienvenido a RayHole Studio. Nos comprometemos a proteger tu privacidad y a garantizar que tu información personal esté segura. Esta política de privacidad describe cómo recopilamos, usamos y compartimos tu información personal cuando utilizas nuestros servicios.</p>
+
+        <h2 class="section-title" id="info-collection">Qué información recopilamos sobre ti</h2>
+        <p>Recopilamos varios tipos de información para mejorar nuestros servicios:</p>
+        <ul>
+            <li><strong>Datos Personales:</strong> Nombre y dirección de correo electrónico.</li>
+            <li><strong>Datos de Uso:</strong> Estadísticas de uso de nuestros servicios, comportamiento en nuestras plataformas.</li>
+            <li><strong>Datos de Transacciones:</strong> Información sobre las compras y transacciones que realizas a través de nuestros servicios, incluyendo detalles de pago y el historial de transacciones.</li>
+        </ul>
+
+        <h2 class="section-title" id="info-use">Cómo usamos la información que recopilamos</h2>
+        <p>Utilizamos la información recopilada para:</p>
+        <ul>
+            <li><strong>Comunicación:</strong> Envío de actualizaciones, promociones, notificaciones. También podemos utilizar tu información para responder a tus consultas y proporcionarte soporte técnico.</li>
+            <li><strong>Seguridad:</strong> Prevención de fraudes, protección de cuentas.</li>
+            <li><strong>Cumplimiento Legal:</strong> Cumplir con nuestras obligaciones legales y regulatorias, responder a solicitudes legales y proteger nuestros derechos y los de nuestros usuarios.</li>
+        </ul>
+
+        <h2 class="section-title" id="info-disclosure">Cómo compartimos la información que recopilamos</h2>
+        <p>Podemos compartir información con proveedores de servicios que nos ayudan a operar y mejorar nuestros servicios, como proveedores de alojamiento, análisis de datos y procesamiento de pagos.</p>
+
+        <h2 class="section-title" id="info-storage">Cómo almacenamos y aseguramos la información que recopilamos</h2>
+        <p>Implementamos diversas medidas de seguridad para proteger tu información personal. Si eres menor de edad, tomamos medidas adicionales para garantizar tu seguridad en nuestras plataformas.</p>
+
+        <h2 class="section-title" id="info-retention">Compras y Transacciones</h2>
+        <p>Si realizas compras o transacciones a través de nuestros servicios, manejamos las transacciones y la información de pago de manera segura. Utilizamos medidas de seguridad avanzadas para proteger tu información financiera.</p>
+
+        <h2 class="section-title" id="info-access">Cómo acceder y controlar tu información</h2>
+        <p>Tienes derecho a acceder, modificar y eliminar tu información personal. Para ejercer estos derechos, por favor contacta con nosotros a través de rayholestudio@gmail.com.</p>
+
+        <h2 class="section-title" id="contact">Contacto</h2>
+        <p>Si tienes preguntas o inquietudes sobre nuestra política de privacidad, por favor contacta con nosotros en rayholestudio@gmail.com.</p>
+
+        <h2 class="section-title" id="other-info">Cambios en la Política de Privacidad</h2>
+        <p>Nos reservamos el derecho de actualizar esta política de privacidad. Te notificaremos sobre cualquier cambio vía correo electrónico. Esta política es efectiva a partir del 17 de mayo de 2024.</p>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="social-icons">
+            <ul class="list-unstyled d-flex justify-content-center">
+                <li class="instagram"><a href="https://www.instagram.com/rayholestudio/?igsh=MXcwcWd3MjdwaTIzMQ%3D%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="linkedin"><a href="https://www.linkedin.com/company/rayhole-studio/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li class="tiktok"><a href="https://www.tiktok.com/@rayhole_studio?_t=8j2glChas9m&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li class="youtube"><a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <p class="text-muted text-center">© 2024, RayHole Studio. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
